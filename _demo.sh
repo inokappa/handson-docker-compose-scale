@@ -1,6 +1,6 @@
 #!/bin/bash
 
-`which unzip`
+which unzip
 if [ ! $? == "0" ];then
   echo "please install unzip(sudo apt-get install unzip)"
   exit 1
