@@ -8,6 +8,6 @@ ADD Gemfile /myapp/Gemfile
 ADD Gemfile.lock /myapp/Gemfile.lock
 RUN bundle install
 ADD . /myapp
-RUN chmod 755 run-app.sh
+RUN chmod 755 run-app.sh && mkdir log && mkdir -p tmp/pids
 #
 CMD ["sh", "run-app.sh"]
