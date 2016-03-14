@@ -18,7 +18,7 @@ services:
     image: hands-on-haproxy
     hostname: haproxy
     ports:
-      - "80"
+      - "80:80"
     depends_on:
       - consul_server
 

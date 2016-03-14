@@ -16,7 +16,7 @@ haproxy:
   image: hands-on-haproxy
   hostname: haproxy
   ports:
-    - "80"
+    - "80:80"
   links:
     - consul_server
 
